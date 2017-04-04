@@ -1,0 +1,14 @@
+<div class="card card-block">
+	<h4 class="card-title">
+		{{contact.name}}
+	</h4>
+	<p class="card-text"
+    	[hidden]="contact.hide">{{contact.phone}}
+    </p>
+	<button (click)="data.toggle()"
+		class="btn btn-primary">Show Contact
+	</button>
+	<button (click)="deleteItem()"
+		class="btn btn-danger">Delete
+	</button>  
+</div>
